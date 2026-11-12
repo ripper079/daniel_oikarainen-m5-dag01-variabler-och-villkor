@@ -30,11 +30,10 @@ for (let i =1; i <= 5; i++){
 /* 5 */
 /* Vi tar en fancy IIFE implementerad via en arrow function */
 const numberToDouble = 45;
-const numberToDouble_ts = 65;
+const numberToDouble_ts: number = 65;
 
 const outputDouble = ((tal) => { return tal * 2; })(numberToDouble);
 const outputDouble_ts: number = ((tal: number) => { return tal * 2; })(numberToDouble_ts);
 
 console.log(`JS - Talet ${numberToDouble} dubblerat är: ${outputDouble}`);
-console.log(`TS - Talet ${numberToDouble} dubblerat är: ${outputDouble_ts}`);
-
+console.log(`TS - Talet ${numberToDouble_ts} dubblerat är: ${outputDouble_ts}`);
