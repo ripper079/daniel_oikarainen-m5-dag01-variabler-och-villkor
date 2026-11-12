@@ -1,3 +1,4 @@
+import "./kalibrering";
 // Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
 // Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
 // Röda understrykningar i VS Code är TypeScript som varnar. Håll musen över dem och läs.
