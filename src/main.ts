@@ -48,6 +48,14 @@ console.log(`Summa: ${summa} kr och Varav moms (12%): ${avrundandMomsDel} kr`);
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
+let isStudent: boolean = true;
+if (isStudent === true){                // <- Lite onödigt att jämföra med true eftersom isStudent alltid är true eller false
+    let studentPris: number = summa * 0.9;
+    let studentMomsDel: number = momsDel * 0.9;
+    let avrundandstudentMomsDel: string = studentMomsDel.toFixed(2);
+    console.log(`Grattis, du kan utnjytta din 10% rabatt-del som student!`);
+    console.log(`Att betala: ${studentPris} kr varav moms (12%): ${avrundandstudentMomsDel} kr`);
+}
 
 
 // STEG 6 ------------------------------------------------------------
