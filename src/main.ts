@@ -25,7 +25,14 @@ console.log(kafeNamn);
 //       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
-
+let fooText: string = "Hoppande kor";
+let fooCount: number = 4;
+let fooIsCorrect: boolean = false;
+let fooWierd: undefined = undefined;
+let fooVoid: null = null;
+console.log(`${fooCount} ${fooText} är ett påstpående som är både ${fooIsCorrect} och ${fooWierd}`);
+// typeof av ett null datatyp är object (tittade på dina slides...INNAN :D )
+console.log(`fooText är ${typeof fooText} - fooCount är ${typeof fooCount} - fooIsCorrect är ${typeof fooIsCorrect} - fooWierd är ${typeof fooWierd} - fooVoid är ${typeof fooVoid}`)
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
