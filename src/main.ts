@@ -62,7 +62,29 @@ if (isStudent === true){                // <- Lite onödigt att jämföra med tr
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+const validWeekDays = ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag", "söndag"];
+const fictionalWeekDay: string = validWeekDays[4];
+const fictionalhour: number = 18;
 
+var isOpen: boolean = false;
+if (
+  (fictionalWeekDay === "måndag" ||
+    fictionalWeekDay === "tisdag" ||
+    fictionalWeekDay === "onsdag" ||
+    fictionalWeekDay === "torsdag" ||
+    fictionalWeekDay === "fredag") &&
+  (fictionalhour >= 7 && fictionalhour <= 18)){
+    isOpen = true;
+} else if (
+  ( fictionalWeekDay === "lördag" ||
+    fictionalWeekDay === "söndag") &&
+  (fictionalhour >= 9 && fictionalhour <= 16)) {
+  isOpen = true;
+} else {
+    isOpen = false;
+}
+
+console.log(`Öppet just nu: ${ isOpen ? "ja" : "nej" }`);
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
