@@ -40,7 +40,10 @@ console.log(`fooText är ${typeof fooText} - fooCount är ${typeof fooCount} - f
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
-
+let summa: number = (antalBullar * prisBulle) + (antalKaffe * prisKaffe);
+let momsDel: number = (summa * (0.12 / 1.12));
+let avrundandMomsDel: string = momsDel.toFixed(2);
+console.log(`Summa: ${summa} kr och Varav moms (12%): ${avrundandMomsDel} kr`);
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
