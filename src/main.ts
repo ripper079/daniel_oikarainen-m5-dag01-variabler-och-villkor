@@ -66,7 +66,7 @@ const validWeekDays = ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lör
 const fictionalWeekDay: string = validWeekDays[4];
 const fictionalhour: number = 18;
 
-var isOpen: boolean = false;
+let isOpen: boolean = false;
 if (
   (fictionalWeekDay === "måndag" ||
     fictionalWeekDay === "tisdag" ||
