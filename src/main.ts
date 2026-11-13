@@ -88,3 +88,19 @@ console.log(`Öppet just nu: ${ isOpen ? "ja" : "nej" }`);
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+//Mina gissningar
+//UTTRYCK               Min gissing       Det som hände     Vad sa TypeScript?                  Hade jag rätt                 Resonera
+//"5" + 3               "53"              53                OK                                  JA                            + ger string addtion
+//"5" - 3               2                 2                 IDE klaga, warning                  NJaaaa - output stämmde       + ger number addtion
+//true + 1              2                 2                 IDE klaga, warning                  NJaaaa - output stämmde       gissade att true convertera till number 1
+// 0.1+0.1              0.2               0.2               OK                                  Ja                            Vanlig matematik
+//"" === 0              false             false             IDE klaga, warning                  NJaaaa - output stämmde       Tom sträng är inte nummer 0
+// null == undefined    IDE klagar        true              OK                                  Nej...wierd                   Lotto gissning
+
+console.log(`Gissnigsleken`);
+//console.log("5" + 3);
+//console.log("5" - 3 );
+//console.log(true + 1);
+//console.log(0.1+0.1 );
+//console.log("" === 0 );
+console.log(null == undefined); 
